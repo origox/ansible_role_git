@@ -1,1 +1,15 @@
 ---
+- name: Ensure git is installed
+  ansible.builtin.apt:
+    name: git
+    state: present
+    update_cache: yes
+  become: true
+
+- name: Configure .gitconfig file
+  ansible.builtin.template:
+    src: .gitconfig.j2
+    dest: "~{{ git_config_user }}/.gitconfig"
+    owner: "{{ git_config_user }}"
+    group: "{{ git_config_user }}"
+    mode: '0644'

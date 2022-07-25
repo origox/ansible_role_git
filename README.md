@@ -1,13 +1,13 @@
-# Ansible role: ansible_role_XYZ
-[![CI](https://github.com/origox/ansible_role_XYZ/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/origox/ansible_role_XYZ/actions/workflows/ci.yml)
+# Ansible role: ansible_role_git
+[![CI](https://github.com/origox/ansible_role_git/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/origox/ansible_role_git/actions/workflows/ci.yml)
 
-An Ansible role that install and configure XYZ
+An Ansible role that install and configure git
 
 ## Intial Setup after using template repo
 
 1. Perform initial setup after using this template repo
 
-Run from cmdline `grep -rl XYZ . | xargs sed -i 's/XYZ/NAME_OF_ROLE/gI'`
+Run from cmdline `grep -rl git . | xargs sed -i 's/git/NAME_OF_ROLE/gI'`
 Note, replace NAME_OF_ROLE with your new name of Ansible role
 
 2. Update tasks for actual configuration of new role.
@@ -42,7 +42,7 @@ None.
 
 Available variables are listed below, along with default values (see `defaults/main.yml`):
 
-    XYZ_config:
+    git_config:
       <section>:
         <key>: <value>
 
@@ -55,4 +55,4 @@ None.
     - hosts: all
       roles:
         - role: 
-            src: https://github.com/origox/ansible_role_XYZ 
+            src: https://github.com/origox/ansible_role_git 

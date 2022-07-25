@@ -1,1 +1,27 @@
 ---
+git_config_user: "{{ lookup('ansible.builtin.env','USER') }}"
+git_config:
+  user:
+    name: Your Name
+    email: your-email@exemple.org
+  color:
+    branch: auto
+    diff: auto
+    interactive: auto
+    status: auto
+    ui: auto
+  push:
+    default: current
+  alias:
+    clo: clone
+    co: checkout
+    st: status
+    pur: pull --rebase
+    ci: commit
+    rc: rebase --continue
+    l: "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+    lg: log -M --decorate --graph --oneline
+    br: branch
+    d: "diff"
+    dc: "diff --cached"
+    sth: stash

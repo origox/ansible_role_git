@@ -1,0 +1,6 @@
+{% for section, values in git_config.items() %}
+[{{ section }}]
+{% for key, value in values.items() %}
+    {{ key }} = {{ value }}
+{% endfor %}
+{% endfor %}
