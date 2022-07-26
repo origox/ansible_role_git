@@ -2,8 +2,11 @@
 - name: Converge
   hosts: all
   gather_facts: true
-    
+  
+  vars:
+    git_config_user: root
+
   tasks:
-    - name: "Include origox.ansible_role_XYZ"
+    - name: "Include origox.ansible_role_git"
       ansible.builtin.include_role:
         name: "origox.ansible_role_git"

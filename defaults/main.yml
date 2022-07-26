@@ -17,11 +17,16 @@ git_config:
     co: checkout
     st: status
     pur: pull --rebase
+    c: commit
     ci: commit
+    ca: commit -a
+    cm: commit -m
+    cam: commit -am
+    p: push
     rc: rebase --continue
     l: "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
     lg: log -M --decorate --graph --oneline
-    br: branch
+    b: branch
     d: "diff"
     dc: "diff --cached"
     sth: stash
