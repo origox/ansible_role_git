@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  role_name: ansible_role_git
+  author: origox
+  description: Install and configure git
+  issue_tracker_url: https://github.com/origox/ansible_role_git/issues
+  company: NA
+  license: "license (BSD, MIT)"
+  min_ansible_version: "2.4"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - all
+  galaxy_tags: []
+
+dependencies: []
